@@ -1,0 +1,796 @@
+@media only screen and (max-width : 567px), only screen and (max-device-width : 567px)
+	html,body
+		.footer-text
+			font-size: 11px
+		.section-title
+			font-size: 22px
+		.container
+			width: 98%
+			margin: 0 auto
+		.hiden-mobile
+			display: none
+		.header
+			&-block
+				padding-top: 10px
+			&-logo
+				background: url(../img/mobile/header-logo__mobile.png) no-repeat center 
+				width: 36px
+				height: 35px
+				border-radius: 3px
+				background-color: $active-color
+				margin-left: 0
+			&-contacts
+				display: flex
+				align-items: center
+				&__phones
+					flex-direction: column
+					margin-right: 12px
+				&__phone
+					margin: 0
+					padding: 0
+					a
+						font-size: 14px;
+						span
+							font-weight: 900	
+					&:first-child
+						margin-bottom: 2px
+						border-right: none
+				&__button
+					display: block
+					padding: 8px 4px 8px 8px
+
+		.main
+			&-img
+			text-align: center
+			padding: 50px 0 0 0
+			margin-left: 0
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(0, 0, 0, 0.8)
+				z-index: 0
+			&-text
+				&__form
+					padding: 0
+					background: transparent
+				&__title
+					font-size: 22px
+					color: $active-color
+					line-height: 24px;
+					margin-top: 0		
+				&__subtitle
+					font-size: 18px
+					margin-bottom: 45px	
+		.form
+			display: block
+			padding: 0
+			&-title
+				padding: 0
+				margin: 0
+				font-family: Roboto
+				font-size: 15px
+				font-weight: 300
+				line-height: 18px
+				&__important
+					font-family: Roboto - Bold;
+					font-weight: 700;
+					text-transform: uppercase;
+					margin-top: 15px
+					font-size: 15px
+			&__input
+				display: block
+				margin: 10px auto
+				width: 290px	
+				padding: 19px 0 19px 60px	
+			&__btn
+				padding: 19px 35px 18px
+			&__small
+				margin-left: 0
+				padding-bottom: 58px
+				display: block
+		.popup
+			max-width: 85%
+			top: 15% !important
+			&-title
+				font-size: 16px !important
+				min-height: 40px !important
+				line-height: 40px !important
+				padding: 10px 0
+			&-form
+				padding: 10px 0 0 0 !important
+				&__flex
+					display: flex
+					flex-direction: column
+					align-items: center
+					margin-top: 20px
+				&__btn
+					margin-left: 0 !important
+					margin-top: 0 !important
+				&-header
+					font-size: 20px !important
+					span
+						font-size: 20px !important
+						display: block
+				&__label
+					margin-top: 10px !important
+					line-height: 20px !important
+				&__input
+					margin-top: 0 !important
+					margin-bottom: 10px !important
+					width: 250px !important
+					padding-left: 42px !important
+		.section
+				&-title
+					&:after
+						display: none
+		#advantages
+			padding-top: 15px
+			padding-bottom: 15px
+		.advantages
+			display: flex
+			margin-left: 0
+			padding-bottom: 0
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&-block
+				margin-bottom: 25px
+				&:nth-child(2)
+					margin-left: 0	
+				&:last-child
+					margin-left: 0
+					margin-bottom: 0
+				&__title
+					margin-bottom: 0
+					span
+						color: #f39003
+						font-family: Roboto - Black
+						font-size: 30px
+						font-weight: 900
+				&__text
+
+		.products
+			&-title
+			margin-top: -15px	
+			padding-bottom: 0
+			&-block
+				&__title
+					&_4
+						margin-top: -40px
+				&__img
+					max-height: 220px 
+					img
+						height: 220px	
+						width: 320px
+				&__buttons
+					.button-o
+						margin-right: 7px
+		.features
+			&-blocks
+				display: flex
+				align-items: center
+				flex-direction: column
+				flex-wrap: wrap
+				margin-top: 23px
+			&-block
+				width: 290px !important
+				padding: 0	
+				align-items: center
+				margin-bottom: 8px
+				&__img
+					flex-basis: 50%
+		#clients
+			margin-top: 10px
+			margin-bottom: 0
+		.clients
+			&-title
+				margin-top: 56px	
+			&-blocks
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				align-items: center
+				margin-top: 20px
+			&-block
+				border: 1px solid #e6e6e6
+				display: flex
+				align-items: center
+				justify-content: center
+				max-height: 87px
+				flex-basis: 48%
+				max-width: 143px
+				margin-bottom: 35px
+				border-sizing: border-box
+				img
+					filter: grayscale(0%);
+					display: block
+					width: 70%
+				&_last
+					img
+						width: 47px
+						height: 57px
+				&_first
+					img
+						width: 67px 
+						height: 64px
+		.smoke-dialog_wrapper 
+			 width: 300px
+			 position: fixed
+			 left: 50%
+			 margin-left: -150px
+			 height: 200px
+			 top: 50%
+			 margin-top: -100px
+
+		.offer
+			margin-top: 10px
+			background: #000 url(../img/offer-bg__mobile.jpg) center no-repeat / cover
+			&-title
+				font-family: Roboto;
+				font-size: 20px
+				font-weight: 700
+				line-height: 24px
+				span
+					font-family: "Roboto"
+					font-size: 16px
+					font-weight: 400
+					margin-top: 5px
+			&-subtitle
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+				font-family: Roboto
+			&-input
+				padding-left: 85px
+				font-family: Roboto
+				font-size: 13px
+				font-weight: 300
+				line-height: 42px
+			&-small
+				padding-top: 15px
+				font-size: 13px
+				font-weight: 300
+				line-height: 30px
+				display: unline
+				text-align: center
+		.feedback
+			padding: 15px 0 35px
+			&-slider
+				padding: 0
+		.slider-arrow
+			&__left
+				&_feed
+					background: $active-color url(../img/arrow-left__active.png) center no-repeat
+					left: 5px
+					border: none
+					height: 79px	
+					top: 50%
+					margin-top: -39px	
+					position: absolute !important
+			&__right
+				&_feed
+					background: $active-color url(../img/arrow-right__active.png) center no-repeat
+					right: 5px !important
+					border: none
+					height: 79px	
+					top: 50%
+					margin-top: -39px
+					position: absolute !important
+
+
+
+@media (min-width: 567px) and (max-width: 768px)
+	html
+		body
+			.container
+				width: 98%
+				margin: 0 auto
+			.hiden-mobile
+				display: none
+			.header
+				&-block
+					padding-top: 15px
+				&-logo
+					background: url(../img/mobile/header-logo__mobile.png) no-repeat center
+					width: 50px
+					height: 50px
+					border-radius: 3px
+					background-color: $active-color
+					margin-left: 0
+				&-contacts
+					display: flex
+					align-items: center
+					&__phones
+						flex-direction: column
+						margin-right: 12px
+					&__phone
+						margin: 0
+						padding: 0
+						a
+							span
+								font-weight: 900
+						&:first-child
+							margin-bottom: 2px
+							border-right: none
+					&__button
+						display: block
+						padding: 14px 10px 14px 14px
+			.main
+				&-img
+				text-align: center
+				padding: 50px 0 0 0
+				margin-left: 0
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(0, 0, 0, 0.8)
+					z-index: 0
+				&-text
+					&__form
+						padding: 0
+						background: transparent
+					&__title
+						font-size: 25px
+						color: $active-color
+						line-height: 24px;
+					&__subtitle
+						font-size: 20px
+			.form
+				display: flex
+				padding: 0
+				&-title
+					padding: 0
+					margin: 0
+					font-family: Roboto
+					font-size: 15px
+					font-weight: 300
+					line-height: 18px
+					&__important
+						font-family: Roboto - Bold;
+						font-weight: 700;
+						font-size: 25px
+						text-transform: uppercase;
+						margin-top: 15px
+				&__input
+					display: block
+					margin: 10px auto
+					width: 290px
+				&__btn
+					margin: 10px auto
+					font-size: 17px
+					padding: -2px 26px
+				&__small
+					margin-left: 0
+					font-size: 17px
+					padding-bottom: 58px
+					display: block
+			.popup
+				max-width: 85%
+				top: 15% !important
+				&-title
+					font-size: 16px !important
+					min-height: 40px !important
+					line-height: 40px !important
+					padding: 10px 0
+				&-form
+					padding: 10px 0 0 0 !important
+					&__btn
+						margin-top: 0 !important
+						padding-bottom: 14px
+					&-header
+						font-size: 19px !important
+						span
+							font-size: 23px !important
+							display: block
+					&__label
+						margin-top: 10px !important
+						line-height: 20px !important
+					&__input
+						width: 90% !important
+						max-width: 300px
+						margin-bottom: 10px
+			#advantages
+				padding-top: 23px
+				padding-bottom: 0px
+			.advantages
+				display: flex
+				margin-left: 0
+				padding-bottom: 0
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				&-block
+					&:nth-child(2)
+						order: 1
+						margin-left: 0	
+					&:last-child
+						margin-left: 0
+						margin-bottom: 0
+					&__text
+						margin-bottom: 20px
+			.products
+				padding-bottom: 0
+				&-block
+					&__img
+						max-height: 180px 
+						img
+							height: 100%	
+					&__buttons
+						.button-o
+							margin-right: 0
+			.features
+				&-blocks
+					display: flex
+					margin-top: 23px
+				&-block
+					max-width: 240px
+					align-items: center
+					display: block
+					padding: 0
+					height: 170px
+					text-align: center
+					&__img
+						flex-basis: 50%
+						padding-top: 15px
+						&_imp
+							img
+								padding-bottom: 10px
+			.section-block
+				img
+					filter: grayscale(0%);
+			.clients
+				&-title
+					margin-top: 30px
+				&-block
+					img
+						filter: grayscale(0%)	
+
+			.offer
+				margin-top: 10px
+				background: #000 url(../img/offer-bg.jpg) center no-repeat / cover
+				&-title
+					font-family: Roboto;
+					font-size: 20px
+					font-weight: 700
+					line-height: 24px
+					span
+						font-family: "Roboto"
+						font-size: 16px
+						font-weight: 400
+						margin-top: 5px
+				&-subtitle
+					font-size: 14px
+					font-weight: 300
+					line-height: 30px
+					font-family: Roboto
+				&-input
+					padding-left: 87px
+					font-family: Roboto
+					font-size: 13px
+					font-weight: 300
+					line-height: 42px
+			
+
+			.offer
+				margin-top: 10px
+				background: #000 url(../img/offer-bg__mobile.jpg) center no-repeat / cover
+				&-title
+					font-family: Roboto;
+					font-size: 20px
+					font-weight: 700
+					line-height: 24px
+					span
+						font-family: "Roboto"
+						font-size: 16px
+						font-weight: 400
+						margin-top: 5px
+				&-subtitle
+					font-size: 14px
+					font-weight: 300
+					line-height: 30px
+					font-family: Roboto
+				&-input
+					padding-left: 85px
+					font-family: Roboto
+					font-size: 13px
+					font-weight: 300
+					line-height: 42px
+				&-small
+					padding-top: 15px
+					font-size: 13px
+					font-weight: 300
+					line-height: 30px
+					display: unline
+					text-align: center
+			
+
+
+@media (min-width: 769px) and (max-width: 992px)
+	html
+		body
+			.hiden-mobile
+				display: none
+			.container
+				width: 98%
+				margin: 0 auto
+			.hiden-mobile
+				display: none
+			.header
+				&-logo
+					background: url(../img/mobile/header-logo__mobile.png) no-repeat center
+					width: 50px
+					height: 50px
+					border-radius: 3px
+					background-color: $active-color
+					margin-left: 0
+				&-contacts
+					display: flex
+					align-items: center
+					&__phones
+						flex-direction: column
+						margin-right: 12px
+					&__phone
+						margin: 0
+						padding: 0
+						a
+							span
+								font-weight: 900
+						&:first-child
+							margin-bottom: 2px
+							border-right: none
+					&__button
+						display: block
+						padding: 14px 10px 14px 14px
+			.main
+				&-img
+				text-align: center
+				padding: 50px 0 0 0
+				margin-left: 0
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(0, 0, 0, 0.8)
+					z-index: 0
+				&-text
+					&__form
+						padding: 0
+						background: transparent
+					&__title
+						font-size: 25px
+						color: $active-color
+						line-height: 24px;
+					&__subtitle
+						font-size: 20px
+			.form
+				display: block
+				justify-content: center
+				padding: 0
+				&-title
+					padding: 0
+					margin: 0
+					font-family: Roboto
+					font-size: 15px
+					font-weight: 300
+					line-height: 18px
+					&__important
+						font-family: Roboto - Bold;
+						font-weight: 700;
+						font-size: 25px
+						text-transform: uppercase;
+						margin-top: 15px
+				&__input
+					display: block
+					margin: 10px auto
+					width: 310px
+					padding: 19px 66px
+				&__btn
+					font-size: 19px
+					padding: 19 30px
+					width: 230px
+				&__small
+					margin-left: 0
+					font-size: 17px
+					padding-bottom: 58px
+					display: block
+			.popup
+				max-width: 85%
+				top: 15% !important
+				&-title
+					font-size: 16px !important
+					min-height: 40px !important
+					line-height: 40px !important
+					padding: 10px 0
+				&-form
+					&__flex
+						display: flex
+						margin-top: 20px
+						align-items: center
+						justify-content: center
+					&__btn
+						margin-top: 0 !important
+						padding: 0 !important
+					&-header
+						font-size: 20px !important
+						span
+							font-size: 27px !important
+							display: block
+					&__label
+						margin-top: 10px !important
+						line-height: 20px !important
+					&__input
+						width: 90% !important
+						margin: 0!important
+						max-width: 300px
+						margin-bottom: 10px
+			#advantages
+				padding-top: 25px
+				padding-bottom: 0px
+			.advantages
+				display: flex
+				margin-left: 0
+				padding-bottom: 0
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				&-block
+					width: 270px
+					
+					&:nth-child(2)
+						order: 1
+						margin-left: 0	
+					&:last-child
+						margin-left: 0
+						margin-bottom: 0
+					&__text
+						margin-bottom: 23px
+			.products
+				padding-bottom: 0
+				&-block
+					width: 330px
+					height: 403px
+					&__img
+						max-height: 230px
+						&_4	
+							margin-bottom: 45px
+					&__title
+						&_4
+							margin-top: -26px	
+							margin-bottom: 55px	
+					&__buttons
+						.button-o
+							margin-right: 0
+			.features
+				&-blocks
+					display: flex
+					justify-content: space-around
+					align-items-center
+					margin-top: 15px
+				&-block
+					max-width: 300px
+
+					display: block
+					height: 170px
+					text-align: center
+					&__img
+						flex-basis: 50%
+						padding-top: 15px
+						&_imp
+							img
+								padding-bottom: 10px
+			.clients
+				&-title
+					margin-top: 20px	
+
+			.offer
+				margin-top: 0
+				&-input
+					padding-left: 92px
+
+@media (min-width: 992px) and (max-width: 1200px)
+	html
+		body
+			.container
+				width: 968px
+				margin: 0 auto
+			.header
+				&-logo
+					background: url(../img/header__logo.png) no-repeat center / cover
+					width: 191px
+					height: 61px
+				&-contacts
+					display: flex
+					align-items: center
+					&__phones
+						margin-right: 12px
+					&__phone
+						margin-right: 13px
+						padding: 5px 13px 5px 0
+						line-height: 22px
+						&:first-child
+							border-right: 1px solid #cfcfd0
+					&__button
+						display: block
+						padding: 14px 10px 14px 14px
+			.main
+				padding: 0
+				&-img
+					width: 400px !important
+					margin-left: -30px
+					img
+						margin: 40px auto
+						height: 378px;
+					&::before
+						display: none
+					&::after
+						bottom: 30px
+						left: 50px
+				&-text
+					&__form
+						padding: 10px 0
+						margin-bottom: 20px
+					&__title
+						font-size: 25px
+						line-height: 20px
+						text-align: center
+					&__subtitle
+						font-size: 18px
+						line-height: 18px
+						text-align: center
+			.form
+				text-align: center
+				&__small
+					text-align: center
+					display: block
+					margin-left: 0
+					padding-bottom: 10px
+					font-size: 17px
+				&-title
+					text-align: center
+					padding: 10px 0
+					margin-bottom: 5px
+					&__important
+						font-size: 18px
+			.features
+				&-blocks
+				&-block
+					padding-right: 2px
+					&__text
+						padding-left: 0
+						padding-right: 5px
+					&__first
+						display: flex
+						justify-content: space-between
+					&__second
+						display: flex
+						justify-content: space-between
+					&__descr
+						padding-right: 5px
+
+@media only screen and (min-width : 1200px), only screen and (min-device-width : 1200px)
+	html,body
+		.container
+			width: 982px
+		.features
+			&-blocks
+			&-block
+				&__first
+					display: flex
+					justify-content: space-between
+				&__second
+					display: flex
+					justify-content: space-between

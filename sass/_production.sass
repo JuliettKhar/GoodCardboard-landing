@@ -1,0 +1,263 @@
+#production
+	margin-top: 90px
+	margin-bottom: 90px
+
+
+.production
+	display: flex
+	&-container
+		max-width: 968px
+		margin: 0 auto
+	&-text
+		margin-top: 19px
+		&__title
+			color: #fff;
+			font-family: Roboto;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 22px;
+			background: $active-color
+			padding: 20px 0 20px 29px
+			margin-bottom: 25px
+		&__descr
+			width: 400px;
+			height: 253px;
+			text-align: justify
+			color: #373737;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 24px;
+			padding-left: 25px
+			p
+				margin-top: 0
+				margin-bottom: 10px
+	&-slider
+		&__top
+			max-width: 535px
+			max-height: 377px	
+		&__bottom
+			max-width: 535px
+			max-height: 78px
+			position: relative
+			padding-left: 23px
+			padding-right: 25px
+			margin-top: 13px
+			img
+				height: 78px
+				margin: 0 3px
+		&__arrow
+			&_left
+				position: absolute
+				top: 0
+				background: #fff url(../img/arrow-left.png) center no-repeat
+				left: 0
+				width: 22px
+				height: 78px
+				z-index: 0
+				border: 1px solid $active-color
+				&:hover
+					cursor: pointer
+					background: $active-color url(../img/arrow-left__active.png) center no-repeat
+			&_right
+				position: absolute
+				top: 0
+				background: #fff url(../img/arrow-right.png) center no-repeat
+				right: 0
+				width: 22px
+				height: 78px
+				z-index: 0
+				border: 1px solid $active-color
+				&:hover
+					cursor: pointer
+					background: $active-color url(../img/arrow-right__active.png) center no-repeat
+
+.slick-current
+	filter: none !important
+
+.slick-arrow
+	z-index: 2
+
+.slick-slide
+	filter: brightness(50%)
+
+@media (max-width: 576px)
+	#production
+		margin-bottom: 0px
+		margin-top: 10px
+	.production
+		display: flex
+		flex-direction: column
+		&-slider
+			&__top
+				padding-right: 5%
+				padding-left: 5%
+				height: 380px
+				margin-right: 0
+				img
+					height: 380px 
+		&-sliders
+			order: 1
+		&-text
+			order: -1
+			&__title
+				font-size: 20px
+				font-weight: 700
+				line-height: 18px
+				text-transform: uppercase
+				text-align: center
+				padding-top: 20px
+				padding-bottom: 20px
+				padding-left: 0
+				padding-right: 0
+				width: 100%
+			&__descr
+				margin: 0 auto
+				padding-left: 0
+				width: 96%
+				text-align-last: center
+				padding-left: 2%
+				padding-right: 2%
+				p
+					font-family: Roboto
+					font-size: 14px
+					font-weight: 300
+					line-height: 18px
+					color: #373737
+					text-align: justify
+					display: inline-block
+					span
+						text-align: center
+					&:last-child
+						margin-bottom: 0
+		&-slider
+			&__top
+				position: relative
+			&__arrow
+				&_left
+					position: absolute
+					top: 50%
+					margin-top: -39px
+					background: $active-color url(../img/arrow-left__active.png) center no-repeat
+					left: 16px
+					width: 22px
+					height: 78px
+					z-index: 2
+					border: 1px solid $active-color
+				&_right
+					position: absolute
+					top: 50%
+					right: 16px
+					margin-top: -39px
+					background: $active-color url(../img/arrow-right__active.png) center no-repeat
+					width: 22px
+					height: 78px
+					z-index: 2
+					border: 1px solid $active-color
+			&__bottom
+				display: none
+
+@media (min-width: 535px) and (max-width: 576px)
+	.production
+		&-slider
+			&__top
+				width: 535px
+				margin: 0 auto 
+
+@media (min-width: 576px) and (max-width: 768px) 
+	#production
+		margin-bottom: 0px
+		margin-top: 10px
+	.production
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&-slider
+			&__top
+				padding-right: 5%
+				padding-left: 5%
+		&-sliders
+			order: 1
+		&-text
+			order: -1
+			&__title
+				font-size: 20px
+				font-weight: 700
+				line-height: 18px
+				text-transform: uppercase
+				text-align: center
+				padding-top: 20px
+				padding-bottom: 20px
+				padding-left: 0
+				padding-right: 0
+				width: 100%
+			&__descr
+				margin: 0 auto
+				padding-left: 0
+				width: 96%
+				text-align-last: center
+				padding-left: 2%
+				padding-right: 2%
+				height: 170px
+				p
+					font-family: Roboto
+					font-size: 14px
+					font-weight: 300
+					line-height: 18px
+					color: #373737
+					text-align: justify
+					display: inline-block
+					span
+						text-align: center
+					&:last-child
+						margin-bottom: 0
+		&-slider
+			&__top
+				position: relative
+			&__arrow
+				&_left
+					position: absolute
+					top: 50%
+					margin-top: -39px
+					background: $active-color url(../img/arrow-left__active.png) center no-repeat
+					left: 16px
+					width: 22px
+					height: 78px
+					z-index: 1
+					border: 1px solid $active-color
+				&_right
+					position: absolute
+					top: 50%
+					right: 16px
+					margin-top: -39px
+					background: $active-color url(../img/arrow-right__active.png) center no-repeat
+					width: 22px
+					height: 78px
+					z-index: 1
+					border: 1px solid $active-color
+			&__bottom
+				display: none
+
+@media (min-width: 768px) and (max-width: 992px)
+	#production
+		margin-top: 30px !important
+	.production
+		flex-direction: column-reverse
+		&-text
+			&__title
+				text-align: center
+			&__descr
+				padding-left: 0
+				width: 100%
+				text-align: center
+				padding-left: 2%
+				padding-right: 2%
+				height: 170px
+		&-slider
+			&__top
+				width: 535px
+				margin: 0 auto 
+			&__bottom
+				width: 535px
+				margin: 6px auto
